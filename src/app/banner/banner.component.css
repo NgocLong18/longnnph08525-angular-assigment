@@ -1,0 +1,30 @@
+.banner {
+    background: #f7f7f7;
+}
+.banner .container .banner--img img{
+    position: relative;
+}
+.banner--title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.banner--title h2 {
+    font-size: 90pt;
+    opacity: 0.8;
+    color: #ffffff;
+    font-weight: normal;
+}
+.banner-btn .btn{
+    font-size: 16px;
+    opacity: 0.5;
+}
+.banner-btn .btn:hover{
+    opacity: 1;
+    transition-duration: 2s ; 
+}
+.banner{
+    margin-bottom: 80px;
+}

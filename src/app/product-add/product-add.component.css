@@ -1,0 +1,8 @@
+.btn{
+    border: 1px solid;
+    margin-left: 50%;
+}
+.btn:hover{
+    background: black;
+    color: #ffffff;
+}

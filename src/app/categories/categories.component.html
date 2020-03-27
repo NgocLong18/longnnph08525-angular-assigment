@@ -1,0 +1,15 @@
+<section class="course-categories">
+    <div class="container">
+        <div class="section-title course-categories-heading">
+            <h2 class="course-categories-heading__title">Course Categories</h2>
+        </div>
+        <!--end -->
+        <div class="course-categories-item">
+            <div class="row">
+                <div class="col-3 mb-3" *ngFor="let category of categories">
+                    <img [src]="category.img" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

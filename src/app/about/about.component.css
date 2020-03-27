@@ -1,0 +1,18 @@
+.about-us{
+    background: url(https://lh3.googleusercontent.com/TLN-LRCPg_Dmovo_siHjxXWtsVBBLC5iifjeMqMgMz96cPzsMy4k1is2eligvkzLggao9Ew_6yv2HKWkG3gFcBb9yR7nLEaYBG3QAjh0NS4Y2zH0kDZCWlD4iS7H5ODL1SvIqz7gvugqmVP1VL43cMVR4QtHbgg_4F32FTuYT3E2WmYVmdxFLoNoXT7XD0MibHj0_gBpoJllRqL1AQ8MENSE78AtxwTVcAEuxvtGes_nLZcZ0wVhnws_p7ZOyb54XX6ikFUt1_yhiZ5EvEYt0I_D1NQ977kGHwEtVG_86JxgSkpE4AID4GdiZFP-lAHLoTqRC-U93HNypFLVCSlyrGKuaCd0Ph0Zt3EVAZN-R-eEMio1Hl7CpJCideUGQqnv2VopWHFpIK1RLI_S7gg2TkZc-ufIhms5I54aYy_F-KenwVs20eVWOAlrzPSWoym59RAmH8egJl1J8kXwe10Atjqn34aLGBUogFtp7lV7C8HzOaIF3XZYMHNo-Uv61LsfIUdwf3KcpinS9DM1onunmthEnX2csoKwmSkWWXwtoggJdQil1gsmHFwhE2UZRUKB-TYGcQPdliHnic5TNYRLa668KAaafSwIFNNYTEETtmxSj8iJbk9BUdCG_oQBjDZzzK4HU96zRCSj-NvyWdfvx-uT58rJuVkiBArUbmEWrk0rVLRAqaBdZYFhtflJSg=w1800-h380-no);
+    text-align: center;
+}
+.about-us--title{
+    color: #ffffff;
+    font-size: 30pt;
+    padding-top: 45px;
+}
+.about-us--h4{
+    color: #6c83e6;
+}
+.about-us-lead{
+    margin-top: 50px;
+    font-size: 12pt;
+    color: #cccccc;
+    padding-bottom: 45px;
+}

@@ -1,0 +1,41 @@
+.section-item{
+    margin-bottom: 80px
+}
+.design-link{
+    font-size: 12pt;
+    font-weight: bolder;
+    color: #3755d8;
+}
+.card-title{
+    font-size: 16pt;
+    color: #5f5f60;
+}
+.price-new{
+    font-size: 20pt;
+    margin-bottom: 30px;
+}
+.price-old{
+    margin-left: 7px;
+    font-size: 14pt;
+    text-decoration: line-through;
+    color: #cfd0d6;
+}
+.section-title{
+    text-align: center;
+    margin: 45px 0;
+}
+
+.product-item{
+    height: 550px;
+    position: relative;
+}
+.product-item .btn{
+    position: absolute;
+    bottom: 0px;
+    left: 30%;
+}
+
+.price{
+    position: absolute;
+    top:80% ;
+}
