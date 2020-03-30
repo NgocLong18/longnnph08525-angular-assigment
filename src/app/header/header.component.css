@@ -1,0 +1,10 @@
+header{
+    background: #f7f7f7;
+}
+header .navbar a{
+    color: #5f5f60;
+}
+header .navbar a:hover{
+    color: #8f8f8f;
+    text-decoration: none;
+}

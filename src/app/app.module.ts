@@ -19,13 +19,17 @@ import { ProductService } from './services/product.service';
 import { CategoriesService } from './services/categories.service';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
 
 @NgModule({
   imports:      [ BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, AboutComponent, BannerComponent, CategoriesComponent, HomeComponent, JumbotronComponent, NotfoundComponent, ProductComponent, ProductAddComponent, ProductDetailComponent, ProductListComponent, SubcribeComponent ],
+  declarations: [ AppComponent, HelloComponent, AboutComponent, BannerComponent, CategoriesComponent, HomeComponent, JumbotronComponent, NotfoundComponent, ProductComponent, ProductAddComponent, ProductDetailComponent, ProductListComponent, SubcribeComponent, HeaderComponent, FooterComponent, SidebarComponent, ProductEditComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService, CategoriesService]
 })

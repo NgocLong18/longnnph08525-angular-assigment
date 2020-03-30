@@ -1,0 +1,15 @@
+<app-sidebar></app-sidebar>
+<div *ngIf="product"style="width: 80%; float: right">
+        <h2 class="mt-5 mb-4" style="text-align: center;">Information Product Item</h2>
+        <form action="" class="form-gruop">
+            <label for="">Name Product</label>
+            <input type="text" name="itemName" class="form-control" [(ngModel)]="product.itemName" />
+            <label for="">Price</label>
+            <input type="text" name="price" class="form-control" [(ngModel)]="product.price" />
+            <label for="">Type Product</label>
+            <input type="text" name="typeProduct" class="form-control" [(ngModel)]="product.typeProduct" readonly />
+            <label for="">Old Price</label>
+            <input type="text" name="oldPrice" class="form-control" [(ngModel)]="product.oldPrice" />
+            <button type="submit" class="btn btn-light mt-4 mb-5" (click)="updateProduct()">Update</button>
+        </form>
+</div>

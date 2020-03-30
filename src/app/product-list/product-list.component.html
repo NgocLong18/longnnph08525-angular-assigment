@@ -1,6 +1,6 @@
-<div class="container mt-5 mb-5">
-  <a routerLink="product-add">Create New Product</a>
-  <table class="table ">
+<app-sidebar></app-sidebar>
+<div style="width: 80%; float: right">
+  <table class="table"  >
     <thead>
       <tr>
         <th scope="col">Item Name</th>
@@ -17,7 +17,7 @@
         <td>{{product.typeProduct}}</td>
         <td>{{product.price}}</td>
         <td>{{product.oldPrice}}</td>
-        <td><button type="button" class="btn btn-link" routerLink="/product/{{product.id}}">Detail</button></td>
+        <td><button type="button" class="btn btn-link" routerLink="product-edit/{{product.id}}">Detail</button></td>
         <td><button class="btn btn-link" (click)="removeItem(product.id)">Delete</button></td>
       </tr>
     </tbody>
