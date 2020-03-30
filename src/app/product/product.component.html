@@ -1,23 +1,25 @@
 <div class="section-item featured-course-item">
-    <div class="container">
-        <div class="section-title featured-course-heading">
-            <h2 class="featured-course-heading__title">
-                Our Featured Courses
-            </h2>
-        </div>
-        <div class="row">
-            <div class="col-4 mb-5 product-item" *ngFor="let product of products">
-                <a href="#"><img [src]="product.img" class="img-fluid" alt=""></a>
-                <div class="card-body">
-                    <p><a href="#" class="design-link mb-2">{{product.typeProduct}}</a></p>
-                    <h5><a href="#" class="card-title mb-2">{{product.itemName}}</a></h5>
-                    <div class="price">
-                        <span class="price-new mr-2">{{product.price}}</span>
-                        <span class="price-old">{{product.oldPrice}}</span>    
-                    </div>
-                </div>
-                <a href="#" class="btn btn-secondary mt-30">Apply</a>
-            </div>
-        </div>
-    </div>
+	<div class="container">
+		<div class="section-title featured-course-heading">
+			<h2 class="featured-course-heading__title">
+				Our Featured Courses
+			</h2>
+		</div>
+		<div class="row">
+			<div class="col-4 mb-5 product-item" *ngFor="let product of products">
+				<a href="#"><img [src]="product.img" class="img-fluid" alt=""></a>
+					<div class="card-body">
+						<p><a href="#" class="design-link mb-2">{{product.typeProduct}}</a></p>
+						<h5><a routerLink="/product/{{product.id}}" class="card-title mb-2">{{product.itemName}}</a>
+						</h5>
+
+						<div class="price">
+							<span class="price-new mr-2">${{product.price}}</span>
+							<span class="price-old">${{product.oldPrice}}</span>
+						</div>
+					</div>
+					<a href="#" class="btn btn-secondary mt-30">Apply</a>
+			</div>
+		</div>
+	</div>
 </div>

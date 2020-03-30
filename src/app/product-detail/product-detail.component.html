@@ -1,16 +1,20 @@
 <div *ngIf="product">
     <div class="container">
-        <h2>Information Product Item</h2>
-        <form action="" class="form-gruop">
-            <label for="">Name Product</label>
-            <input type="text" name="itemName" class="form-control" [(ngModel)]="product.itemName" />
-            <label for="">Price</label>
-            <input type="text" name="price" class="form-control" [(ngModel)]="product.price" />
-            <label for="">Type Product</label>
-            <input type="text" name="typeProduct" class="form-control" [(ngModel)]="product.typeProduct" readonly />
-            <label for="">Old Price</label>
-            <input type="text" name="oldPrice" class="form-control" [(ngModel)]="product.oldPrice" />
-            <button type="submit" class="btn btn-light mt-4 mb-5" (click)="updateProduct()">Update</button>
-        </form>
+        <div class="informatin mt-5">
+            <h2>{{product.itemName}}</h2>
+            <img [src]="product.img" class="img-fluid mt-5 mb-4" alt="">
+            <p>{{product.desc}}</p>
+            <div>
+                <span> You can watch the video of this course: </span>
+                <div class="embed-responsive embed-responsive-16by9 mt-4 mb-5">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5JhnDzlMZa0"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <h3>
+                Do You Like This? If you like, Succribe now!!
+            </h3>
+        </div>
     </div>
+    <app-subcribe></app-subcribe>
 </div>
