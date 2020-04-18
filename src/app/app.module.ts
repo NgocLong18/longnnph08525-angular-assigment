@@ -11,7 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ProductComponent } from './product/product.component';
-import { ProductAddComponent } from './product-add/product-add.component';
+
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { SubcribeComponent } from './subcribe/subcribe.component';
@@ -22,14 +22,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { ProductEditComponent } from './product-edit/product-edit.component';
+import { ProductAddComponent } from './product-list/product-add/product-add.component';
+import { ProductEditComponent } from './product-list/product-edit/product-edit.component';
+import { BannerEditComponent } from './banner/banner-edit/banner-edit.component';
+import { CategoriesEditComponent } from './categories/categories-edit/categories-edit.component';
+import { CategoriesListComponent } from './categories/categories-list/categories-list.component';
+
 
 @NgModule({
   imports:      [ BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, AboutComponent, BannerComponent, CategoriesComponent, HomeComponent, JumbotronComponent, NotfoundComponent, ProductComponent, ProductAddComponent, ProductDetailComponent, ProductListComponent, SubcribeComponent, HeaderComponent, FooterComponent, SidebarComponent, ProductEditComponent ],
+  declarations: [ AppComponent, HelloComponent, AboutComponent, BannerComponent, CategoriesComponent, HomeComponent, JumbotronComponent, NotfoundComponent, ProductComponent, ProductAddComponent, ProductDetailComponent, ProductListComponent, SubcribeComponent, HeaderComponent, FooterComponent, SidebarComponent, ProductEditComponent, BannerEditComponent, CategoriesEditComponent, CategoriesListComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService, CategoriesService]
 })

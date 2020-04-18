@@ -12,4 +12,13 @@ export class CategoriesService {
   getCourserCategory(): Observable<Categories[]>{
     return this.http.get<Categories[]>(this.api);
   }
+
+  getCourserCategorys(id): Observable<Categories>{
+    return this.http.get<Categories>(`${this.api}/${id}`);
+    // return this.products.find(product => product.id == id);
+  }
+
+  updateCategories(categories){
+     return this.http.put<Categories>(`${this.api}/${categories.id}`, categories);
+  }
 }

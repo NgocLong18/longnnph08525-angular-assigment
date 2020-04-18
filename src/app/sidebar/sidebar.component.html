@@ -1,25 +1,31 @@
 <div id="viewport">
-    <!-- Sidebar -->
-    <div id="sidebar">
-        <header>
-            <a href="">Adept Course</a>
-        </header>
-        <ul class="nav">
-            <li>
-                <a routerLink="/admin/dashboard">
-                    <i class="zmdi zmdi-view-dashboard"></i> All Product
-                </a>
-            </li>
-            <li>
-                <a routerLink="/admin/dashboard/product-add">
-                    <i class="zmdi zmdi-link"></i> Add Prodcut
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <div>
-            <router-outlet></router-outlet>
-        </div>
-    </div>
+	<!-- Sidebar -->
+	<div id="sidebar">
+		<header>
+			<a href="">Adept Course</a>
+		</header>
+		<ul class="nav">
+			<li>
+				<a routerLink="/admin/dashboard">
+					<i class="zmdi zmdi-view-dashboard"></i> All Product
+				</a>
+			</li>
+			<li>
+				<a routerLink="/admin/dashboard/product-add">
+					<i class="zmdi zmdi-link"></i> Add Prodcut
+				</a>
+			</li>
+      <li>
+				<a routerLink="/admin/categories-manager">
+					<i class="zmdi zmdi-link"></i> Categories
+				</a>
+			</li>
+		</ul>
+
+	</div>
+	<div>
+		<div>
+			<router-outlet></router-outlet>
+		</div>
+	</div>
 </div>

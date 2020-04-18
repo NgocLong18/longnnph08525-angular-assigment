@@ -1,0 +1,8 @@
+<div *ngIf="categories" class="ml-3">
+  <h2>Update Image For Catory</h2>
+	<form action="" class="form-gruop">
+		<input type="text" name="img" class="form-control" [(ngModel)]="categories.img" />
+		<button type="submit" class="btn btn-light mt-4 mb-5" (click)="updateCategory()">Update</button>
+		<button type="submit" class="btn btn-light mt-4 mb-5"><a routerLink="/admin/categories-manager">Cancel</a></button>
+	</form>
+</div>
