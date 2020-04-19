@@ -1,0 +1,18 @@
+<div>
+  <table class="table"  >
+    <thead>
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Header photo </th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let jumbotron of jumbotron">
+        <td>{{jumbotron.tittle}}</td>
+        <td><img [src]="jumbotron.img1" class="img-fluid" alt=""></td>
+        <td><button type="button" class="btn btn-link" routerLink="jumbotron-edit/{{jumbotron.id}}">Edit</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

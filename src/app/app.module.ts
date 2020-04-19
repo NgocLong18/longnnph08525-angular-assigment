@@ -27,6 +27,10 @@ import { ProductEditComponent } from './product-list/product-edit/product-edit.c
 import { BannerEditComponent } from './banner/banner-edit/banner-edit.component';
 import { CategoriesEditComponent } from './categories/categories-edit/categories-edit.component';
 import { CategoriesListComponent } from './categories/categories-list/categories-list.component';
+import { JumbotronEditComponent } from './jumbotron/jumbotron-edit/jumbotron-edit.component';
+import { JumbotronManagerComponent } from './jumbotron/jumbotron-manager/jumbotron-manager.component';
+import { JumbotronDetailComponent } from './jumbotron/jumbotron-detail/jumbotron-detail.component';
+import { JumbotronService } from './services/jumbotron.service';
 
 
 @NgModule({
@@ -34,8 +38,8 @@ import { CategoriesListComponent } from './categories/categories-list/categories
     AppRoutingModule,
     FormsModule,
     HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, AboutComponent, BannerComponent, CategoriesComponent, HomeComponent, JumbotronComponent, NotfoundComponent, ProductComponent, ProductAddComponent, ProductDetailComponent, ProductListComponent, SubcribeComponent, HeaderComponent, FooterComponent, SidebarComponent, ProductEditComponent, BannerEditComponent, CategoriesEditComponent, CategoriesListComponent ],
+  declarations: [ AppComponent, HelloComponent, AboutComponent, BannerComponent, CategoriesComponent, HomeComponent, JumbotronComponent, NotfoundComponent, ProductComponent, ProductAddComponent, ProductDetailComponent, ProductListComponent, SubcribeComponent, HeaderComponent, FooterComponent, SidebarComponent, ProductEditComponent, BannerEditComponent, CategoriesEditComponent, CategoriesListComponent, JumbotronEditComponent, JumbotronManagerComponent, JumbotronDetailComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [ProductService, CategoriesService]
+  providers: [ProductService, CategoriesService, JumbotronService]
 })
 export class AppModule { }

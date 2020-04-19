@@ -11,6 +11,7 @@ import { ProductAddComponent } from "./product-list/product-add/product-add.comp
 import { ProductEditComponent } from "./product-list/product-edit/product-edit.component";
 import { CategoriesListComponent } from "./categories/categories-list/categories-list.component";
 import { CategoriesEditComponent } from "./categories/categories-edit/categories-edit.component";
+import { JumbotronManagerComponent } from "./jumbotron/jumbotron-manager/jumbotron-manager.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -22,7 +23,8 @@ const routes: Routes = [
       { path: "dashboard/product-add", component: ProductAddComponent },
       { path: "dashboard/product-edit/:id", component: ProductEditComponent},
       { path: "categories-manager", component: CategoriesListComponent },
-      { path: "categories-manager/catgory-edit/:id", component: CategoriesEditComponent }
+      { path: "categories-manager/catgory-edit/:id", component: CategoriesEditComponent },
+      { path: "jumbotron-manager", component: JumbotronManagerComponent},
     ]
   },
   { path: "product/:id", component: ProductDetailComponent },
